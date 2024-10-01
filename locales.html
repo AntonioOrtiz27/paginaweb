@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franquicia - Nuestro Café</title>
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles4.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Barra de navegación fija -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-center" href="index.html">TIENDA DE CAFÉ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="franquicia.html">FRANQUICIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="locales.html">LOCALES</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor de contenido (buscador y mapa) -->
+    <div id="content-container">
+        <!-- Cuadro de búsqueda y menú desplegable -->
+        <div class="boxblanco">
+            <div id="search-box">
+                <p class="sucursaless">SUCURSALES</p>
+                <p class="line5"></p>
+                <a href="#point1" class="caja1">
+                    <p>PARQUE CENTENARIO</p>
+                    <p class="direc1">AV. Diáz Vélez 341 Buenos Aires, CABA</p>
+                    <p class="comollegar1">COMO LLEGAR</p>
+                </a>
+                <a href="#point2" class="caja1">
+                    <p>PARQUE CHACABUCO</p>
+                    <p class="direc2">Av. Belgrano 343 Buenos Aires, CABA</p>
+                    <p class="comollegar2">COMO LLEGAR</p>
+                </a>
+                <a href="#point3" class="caja1">
+                    <p>CAPITAL</p>
+                    <p class="direc3">Av. La plata 420 Buenos Aires, CABA</p>
+                    <p class="comollegar3">COMO LLEGAR</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Mapa con iframe -->
+        <div id="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26273.180050524632!2d-58.40307972071178!3d-34.6158031641639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd44b14f2d%3A0x9d157b4d978f734!2sObelisco%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1694351192931!5m2!1ses!2sar"
+                loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" class="mapa">
+            </iframe>
+
+            <!-- Puntos estáticos sobre el mapa -->
+            <div id="point1" class="map-point point1" title="Sucursal Centenario"></div>
+            <div id="point2" class="map-point point2" title="Sucursal Capital"></div>
+            <div id="point3" class="map-point point3" title="Sucursal Chacabuco"></div>
+        </div>
+    </div>
+
+        <!--  footer  -->
+        <footer id="contacto">
+            <div class="contenedor footer-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="img/logito.png" alt="Logo" class="footer-logo">
+                </div>
+        
+                <!-- Columnas de contenido -->
+                <div class="footer-column">
+                    <h3 class="footer-title">CONTENIDOS</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="productos.html">PRODUCTOS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">NECESITÁS AYUDA</h3>
+                    <ul class="footer-links">
+                        <li><a href="franquicia.html">FRANQUICIAS</a></li>
+                        <li><a href="locales.html">LOCALES</a></li>
+                    </ul>
+                </div>
+        
+        
+                <!-- Redes sociales -->
+                <div class="social-media">
+                    <p class="footer-title-redes">REDES</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Tiendadecafe" class="social-media-icon">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="https://www.instagram.com/tiendadecafear/" class="social-media-icon">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </div>
+                </div>
+            <div class="line2"></div>
+            <p class="copyright">© Copyright 2021 Tienda de café - Todos los derechos reservados.<br>Todos los logos, productos,
+                marcas y nombres aqui utilizados son propiedad registrada de Antonio Ortiz.</p>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
